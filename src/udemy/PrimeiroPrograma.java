@@ -23,7 +23,8 @@ public class PrimeiroPrograma {
 			
 			
 			System.out.println("Hello World #2"); // Aqui tbm funciona!
-			System.out.println("Hello World #3"); // Feito pelo notebook
+			System.out.println("Hello World #3"); // Feito pelo notebook - lido no desktop!
+			System.out.println("Hello World #4"); // Feito pelo desktop
 			System.out.println("Fim");
 		}
 }
