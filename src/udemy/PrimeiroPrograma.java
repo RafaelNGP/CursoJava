@@ -23,6 +23,7 @@ public class PrimeiroPrograma {
 			
 			
 			System.out.println("Hello World #2"); // Aqui tbm funciona!
+			System.out.println("Hello World #3"); // Feito pelo notebook
 			System.out.println("Fim");
 		}
 }
