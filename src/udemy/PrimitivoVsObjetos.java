@@ -7,6 +7,7 @@ public class PrimitivoVsObjetos {
 		System.out.println(s.toUpperCase());
 
 		int a = 123;
+		System.out.println(a);
 //		a.toUpperCase(); nao existe, tipos primitivos nao possuem comportamentos.
 		
 //		Wrapper eh a versao objeto dos tipos primitivos.
