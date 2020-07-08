@@ -14,6 +14,7 @@ public class ConversaoTipoPrimitivoNumerico {
 //		explicito, mas devido a capacidade do byte vai ficar um valor truncado. 
 		int c = 130;
 		byte d = (byte) c;
+		System.out.println(d);
 		
 //		explicito, mas existe perda de informacao.
 		double e = 1.99999;
