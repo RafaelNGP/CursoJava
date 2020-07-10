@@ -1,4 +1,4 @@
-package udemy;
+package udemy.fundamentos;
 
 import java.util.Scanner;
 

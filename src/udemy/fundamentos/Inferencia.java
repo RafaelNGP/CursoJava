@@ -1,4 +1,4 @@
-package udemy;
+package udemy.fundamentos;
 
 public class Inferencia {
 	public static void main(String[] args) {

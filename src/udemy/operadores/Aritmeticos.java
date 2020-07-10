@@ -1,4 +1,4 @@
-package udemy;
+package udemy.operadores;
 
 public class Aritmeticos {
 	public static void main(String[] args) {

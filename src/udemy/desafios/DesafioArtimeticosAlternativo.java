@@ -1,4 +1,4 @@
-package udemy;
+package udemy.desafios;
 
 public class DesafioArtimeticosAlternativo {
 	public static void main(String[] args) {

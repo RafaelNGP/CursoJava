@@ -1,4 +1,4 @@
-package udemy;
+package udemy.fundamentos;
 
 public class TipoString {
 	public static void main(String[] args) {
