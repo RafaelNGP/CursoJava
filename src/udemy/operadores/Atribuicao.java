@@ -1,6 +1,7 @@
 package udemy.operadores;
 
 public class Atribuicao {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		int a = 3;
 		int b = a;
