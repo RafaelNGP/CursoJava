@@ -13,5 +13,7 @@ public class ConceitosBasicosEx2 {
 		double fah = entrada.nextDouble();
 		double formulaCelsius = (fah - 32) / 1.8;
 		System.out.println("Temperatura em celsius: " + formulaCelsius);
+		
+		entrada.close();
 	}
 }
