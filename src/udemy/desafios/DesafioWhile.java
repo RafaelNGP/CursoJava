@@ -9,13 +9,16 @@ public class DesafioWhile {
 //		so vai parar quando for digitado -1.
 		Scanner entrada = new Scanner(System.in);
 		String comando = "";
-		int alunos = -1;
-		double notas = 1;
+		int alunos = 0;
+		double notas = 0;
 		while (!comando.equals("-1")) {
 			System.out.println("Digite a nota do aluno: ");
 			comando = entrada.next().replace(",", ".");
-			notas += Double.parseDouble(comando);
-			alunos++;
+
+			if (Double.parseDouble(comando) <= 10 && Double.parseDouble(comando) >= 0) {
+				notas += Double.parseDouble(comando);
+				alunos++;				
+			}
 		}
 		double media = notas / alunos;
 		System.out.printf("Nosso sistema contem: %d alunos e a media da sala eh de %.2f", alunos, media);
