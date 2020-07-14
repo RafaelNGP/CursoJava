@@ -3,7 +3,7 @@ package udemy.controle;
 public class SwitchSemBreak {
 	public static void main(String[] args) {
 		
-		String faixa = "vermelha";
+		String faixa = "branca";
 		
 		switch(faixa.toLowerCase()) {
 		case "preta":
@@ -20,8 +20,9 @@ public class SwitchSemBreak {
 			System.out.println("Sei o Heian Nidan");
 		case "amarela":
 			System.out.println("Sei o Heian Shodan");
+			break;
 		default:
-//			System.out.println("Nao sei nada");
+			System.out.println("Nao sei nada");
 		}
 	}
 }
