@@ -18,6 +18,8 @@ public class DesafioWhile {
 			if (Double.parseDouble(comando) <= 10 && Double.parseDouble(comando) >= 0) {
 				notas += Double.parseDouble(comando);
 				alunos++;				
+			} else if (Double.parseDouble(comando) != -1) {
+				System.out.println("Nota invalida!");
 			}
 		}
 		double media = notas / alunos;
