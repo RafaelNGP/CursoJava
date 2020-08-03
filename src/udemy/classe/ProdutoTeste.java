@@ -18,6 +18,7 @@ public class ProdutoTeste {
 						+ "Produto mais vendido: %s saindo por %.2f com %.0f porcento de desconto!\n",
 				p1.nome, p1.preco, p1.desconto * 100, p2.nome, p2.preco, p2.desconto * 100);
 
-		System.out.printf("Preco final do %s: %.0f", p2.nome, p2.preco - (p2.preco * p2.desconto));
-	}
+		System.out.printf("Preco final do %s: %.0f", p2.nome, p2.precoComDesconto());
+		System.out.printf("\nPreco final do %s com desconto especial: %.0f", p2.nome, p2.precoComMaisDesconto(0.10));
+		}
 }
