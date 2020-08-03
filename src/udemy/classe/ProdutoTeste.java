@@ -2,10 +2,8 @@ package udemy.classe;
 
 public class ProdutoTeste {
 	public static void main(String[] args) {
-		Produto p1 = new Produto();
-		p1.nome = "Calculadora";
-		p1.preco = 10;
-		p1.desconto = 0.10;
+
+		Produto p1 = new Produto("Calculadora", 10, 0.10);
 
 		var p2 = new Produto();
 		p2.nome = "Notebook";
@@ -20,5 +18,5 @@ public class ProdutoTeste {
 
 		System.out.printf("Preco final do %s: %.0f", p2.nome, p2.precoComDesconto());
 		System.out.printf("\nPreco final do %s com desconto especial: %.0f", p2.nome, p2.precoComMaisDesconto(0.10));
-		}
+	}
 }
