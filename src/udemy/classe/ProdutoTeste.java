@@ -17,6 +17,9 @@ public class ProdutoTeste {
 				p1.nome, p1.preco, p1.desconto * 100, p2.nome, p2.preco, p2.desconto * 100);
 
 		System.out.printf("Preco final do %s: %.0f", p2.nome, p2.precoComDesconto());
-		System.out.printf("\nPreco final do %s com desconto especial: %.0f", p2.nome, p2.precoComMaisDesconto(0.10));
+		System.out.printf("\nPreco final do %s com desconto especial: %.0f\n", p2.nome, p2.precoComMaisDesconto(0.10));
+		System.out.println(Produto.teste);
+		Produto.teste = "Novoteste";
+		System.out.println(Produto.teste);
 	}
 }
