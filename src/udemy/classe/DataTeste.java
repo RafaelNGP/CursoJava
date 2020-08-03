@@ -7,10 +7,7 @@ public class DataTeste {
 		d1.mes = 01;
 		d1.ano = 1993;
 
-		Data d2 = new Data();
-		d2.dia = 30;
-		d2.mes = 06;
-		d2.ano = 1966;
+		Data d2 = new Data(30, 06, 1966);
 
 //		System.out.printf("%d/%d/%d\n", d1.dia, d1.mes, d1.ano);
 //		System.out.printf("%d/%d/%d\n", d2.dia, d2.mes, d2.ano);
