@@ -1,25 +1,37 @@
 package udemy.classe;
 
 public class ProdutoTeste {
+	static double carrinho = 0;
 	public static void main(String[] args) {
 
-		Produto p1 = new Produto("Calculadora", 10, 0.10);
+		System.out.println("Todos os itens da loja possuem pelo menos 25% de desconto! VENHAM!");
+		System.out.println("A CADA PRODUTO NOVO, UM EXTRA DE 5% DE DESCONTO!\n");
+
+		Produto p1 = new Produto("Calculadora", 10);
 
 		var p2 = new Produto();
 		p2.nome = "Notebook";
 		p2.preco = 4356.89;
-		p2.desconto = 0.25;
 
-		System.out.printf(
-				"Sistema de gerenciamento de estoque: \n"
-						+ "Produto em destaque: %s saindo por %.2f com %.0f porcento de desconto!\n"
-						+ "Produto mais vendido: %s saindo por %.2f com %.0f porcento de desconto!\n",
-				p1.nome, p1.preco, p1.desconto * 100, p2.nome, p2.preco, p2.desconto * 100);
+		var p3 = new Produto("Xbox One X", 3000);
 
-		System.out.printf("Preco final do %s: %.0f", p2.nome, p2.precoComDesconto());
-		System.out.printf("\nPreco final do %s com desconto especial: %.0f\n", p2.nome, p2.precoComMaisDesconto(0.10));
-		System.out.println(Produto.teste);
-		Produto.teste = "Novoteste";
-		System.out.println(Produto.teste);
+		adicionarProdutoCarrinho(p1);
+		adicionarProdutoCarrinho(p2);
+		adicionarProdutoCarrinho(p3);
+		
+		System.out.printf("\nTotal carrinho: %.2f\n", carrinho);
+		calcularDescontoCarrinho(carrinho);
+	}
+
+	static void adicionarProdutoCarrinho(Produto produto) {
+		System.out.printf("%s adicionado ao carrinho! Valor: %.2f\n", produto.nome, produto.preco);
+		Produto.desconto += 0.05;
+		carrinho += produto.preco;
+	}
+
+	static void calcularDescontoCarrinho(double totalCarrinho) {
+		double totalCarrinhoDesconto = totalCarrinho * (1 - Produto.desconto);
+		System.out.printf("Desconto aplicavel: %.0f porcento\n", Produto.desconto * 100);
+		System.out.printf("Total com desconto: %.2f", totalCarrinhoDesconto);
 	}
 }
