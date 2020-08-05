@@ -7,9 +7,7 @@ public class Data {
 	
 	Data() {
 //		Valores padroes, caso nao seja passado valores.
-		dia = 1;
-		mes = 1;
-		ano = 1970;
+		this(1, 1, 1970);
 	}
 	
 	Data(int dia, int mes, int ano){
