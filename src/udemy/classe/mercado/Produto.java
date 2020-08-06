@@ -1,4 +1,4 @@
-package udemy.classe;
+package udemy.classe.mercado;
 
 public class Produto {
 	String nome;
