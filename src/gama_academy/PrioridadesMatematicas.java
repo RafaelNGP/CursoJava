@@ -1,6 +1,6 @@
 package gama_academy;
 
-public class Teste001 {
+public class PrioridadesMatematicas {
 	public static void main(String[] args) {
 		int a = 10;
 		int b = 5;
