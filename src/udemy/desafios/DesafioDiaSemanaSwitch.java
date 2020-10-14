@@ -2,28 +2,46 @@ package udemy.desafios;
 
 import java.util.Scanner;
 
-public class DesafioDiaSemana {
+public class DesafioDiaSemanaSwitch {
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
+		System.out.println("Escolha um destes: seg, ter, qua, qui, sex, sab ou dom");
 		System.out.print("Digite um dia da semana: ");
 		String dia = entrada.next().toLowerCase();
-		
-		if (dia.contains("dom")) {
+
+		switch (dia) {
+		case "dom": {
 			System.out.println("Domingo significa 1");
-		} else if (dia.contains("seg")) {
+			break;
+		}
+		case "seg": {
 			System.out.println("Segunda significa 2");
-		} else if (dia.contains("ter")) {
+			break;
+		}
+		case "ter": {
 			System.out.println("Terca significa 3");
-		} else if (dia.contains("qua")) {
+			break;
+		}
+		case "qua": {
 			System.out.println("Quarta significa 4");
-		} else if (dia.contains("qui")) {
+			break;
+		}
+		case "qui": {
 			System.out.println("Quinta significa 5");
-		} else if (dia.contains("sex")) {
+			break;
+		}
+		case "sex": {
 			System.out.println("Sexta significa 6");
-		} else if (dia.contains("sab")) {
+			break;
+		}
+		case "sab": {
 			System.out.println("Sabado significa 7");
-		} else {
+			break;
+		}
+		default: {
 			System.out.println("Nenhum valor valido foi inserido.");
+			System.out.println("Tente algo como 'seg' ou 'ter'");
+		}
 		}
 		entrada.close();
 	}
