@@ -15,7 +15,7 @@ public class Pessoa {
 
 	void comerComida(Comida comida) {
 		System.out.printf("\nComendo %s", comida.nomeComida);
-		peso += comida.pesoComida;
+		this.peso += comida.pesoComida;
 //		System.out.println("\nit was super effective!");
 	}
 }
