@@ -8,15 +8,19 @@ public class ConversaoTipos {
 		long mlong = 40;
 		float mfloat = 50.0f;
 		double mdouble = 60.0;
-		
+
 		int a = mbyte;
 		long b = (long) mdouble;
 		double c = mfloat;
-		short d = (short) mlong;		
-		
+		short d = (short) mlong;
+		long e = (long) mint;
+		double f = (double) mshort;
+
 		System.out.println(a);
 		System.out.println(b);
 		System.out.println(c);
 		System.out.println(d);
+		System.out.println(e);
+		System.out.println(f);
 	}
 }
