@@ -7,7 +7,7 @@ public class CaixasDialogo {
 		String nome;
 		int salario;
 		int resp;
-		
+
 		nome = JOptionPane.showInputDialog(null, "Digite seu nome");
 		JOptionPane.showMessageDialog(null, "Quer dizer entao que seu nome eh " + nome + "?");
 		resp = JOptionPane.showConfirmDialog(null, "Deseja continuar a execucao do programa?");
