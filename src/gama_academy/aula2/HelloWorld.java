@@ -1,4 +1,4 @@
-package gama_academy;
+package gama_academy.aula2;
 
 public class HelloWorld {
     public static void main(String[] args) {

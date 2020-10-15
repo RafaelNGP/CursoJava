@@ -1,4 +1,4 @@
-package gama_academy;
+package gama_academy.aula1;
 
 import javax.swing.JOptionPane;
 
