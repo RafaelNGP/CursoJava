@@ -1,17 +1,17 @@
 package udemy.operadores;
 
 public class Atribuicao {
-	@SuppressWarnings("unused")
-	public static void main(String[] args) {
-		int a = 3;
-		int b = a;
-		int c = a+b;
-		
-		c += b; //		c = c + b;
-		c -= a; //		c = c - a;
-		c *= b; //		c = c * b;
-		c %= 2; //		c = c % 2;
-		
-		c++; // 		c + 1
-	}
+    @SuppressWarnings("unused")
+    public static void main(String[] args) {
+        int a = 3;
+        int b = a;
+        int c = a + b;
+
+        c += b; //		c = c + b;
+        c -= a; //		c = c - a;
+        c *= b; //		c = c * b;
+        c %= 2; //		c = c % 2;
+
+        c++; // 		c + 1
+    }
 }

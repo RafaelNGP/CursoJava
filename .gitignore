@@ -1,1 +1,6 @@
 /bin/
+/.idea/
+/.vscode/
+.classpath
+.project
+CursoJava.iml
