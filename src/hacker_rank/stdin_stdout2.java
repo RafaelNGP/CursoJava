@@ -14,5 +14,6 @@ public class stdin_stdout2 {
         System.out.println("String: " + s);
         System.out.println("Double: " + d);
         System.out.println("Int: " + i);
+        scan.close();
     }
 }
