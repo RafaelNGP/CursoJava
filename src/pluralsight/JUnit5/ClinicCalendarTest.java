@@ -3,7 +3,6 @@ package pluralsight.JUnit5;
 import org.junit.jupiter.api.Test;
 
 import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
